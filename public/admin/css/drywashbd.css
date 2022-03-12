@@ -1,0 +1,92 @@
+.ibox-title{
+    overflow: hidden;
+}
+.tpicker {
+    z-index: 99999;
+}
+.dashboardInfoCount{
+    font-size: 50px;
+    font-weight: 900;
+}
+.dashboardInfoLinks{
+    color:#ffffff !important;
+}
+
+.dashboardInfoheading{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.vendorStatusHide, .btnUpdateHide{
+    display: none;
+}
+.vendorStatusShow, .btnUpdateShow{
+    visibility: visible;
+}
+.btn-label-order-add-more{
+    width: 100%;
+    display: inline-block;
+}
+.btn-order-add-more i{
+    font-size: 20px;
+    vertical-align: middle;
+}
+button#btn-add-more {
+    padding: 5px 10px;
+}
+
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.checkOutBottomPadding {
+    padding-bottom: 0px;
+}
+.checkOutBottomPadding .ibox {
+    margin-bottom: 0px;
+}
+
+.select2-container--default .select2-selection--single {
+    border-radius: 0px !important;
+}
+
+.select2-container .select2-selection--single {
+    height: 32px !important;
+}

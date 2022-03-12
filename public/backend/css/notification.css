@@ -1,0 +1,146 @@
+.app-main__inner {
+    position: relative;
+    overflow: hidden;
+}
+
+#alertBox {
+    padding: 20px 40px;
+    min-width: 380px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 1;
+}
+
+#alertBox.showAlert {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#alertBox.hide {
+    display: none;
+}
+
+#alertBox.show {
+    animation: show_slide 1s ease forwards;
+}
+
+@keyframes show_slide {
+    0% {
+        transform: translateX(100%);
+    }
+    40% {
+        transform: translateX(-10%);
+    }
+    80% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+#alertBox.hide {
+    animation: hide_slide 1s ease forwards;
+}
+
+@keyframes hide_slide {
+    0% {
+        transform: translateX(-10px);
+    }
+    40% {
+        transform: translateX(0%);
+    }
+    80% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/**
+* Success style
+*/
+.success {
+    background: #c1f1d5;
+    border-left: 8px solid #2bd572;
+}
+
+.success .fa-check-circle {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #27ab5d;
+    font-size: 30px;
+}
+.success .msg {
+    padding: 0 20px;
+    font-size: 18px;
+    color: #2bd572;
+}
+.success .close-btn {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #94eab9;
+    padding: 20px 18px;
+    cursor: pointer;
+}
+
+.success .close-btn:hover {
+    background: #94f794;
+}
+
+.success .close-btn .fas {
+    color: #27ab5d;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+/**
+* Warning style
+*/
+.warning {
+    background: #ffdb9b;
+    border-left: 8px solid #ffa502;
+}
+
+.warning .fa-exclamation-circle {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ce8500;
+    font-size: 30px;
+}
+.warning .msg {
+    padding: 0 20px;
+    font-size: 18px;
+    color: #ce8500;
+}
+.warning .close-btn {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffd080;
+    padding: 20px 18px;
+    cursor: pointer;
+}
+
+.warning .close-btn:hover {
+    background: #ffc766;
+}
+
+.warning .close-btn .fas {
+    color: #ce8500;
+    font-size: 22px;
+    line-height: 40px;
+}

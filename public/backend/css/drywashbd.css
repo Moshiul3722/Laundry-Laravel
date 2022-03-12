@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+#update-city {
+    display: none;
+}
+
+i.fas.fa-chevron-down.metismenu-state-icon.caret-left {
+    font-size: 14px;
+}
